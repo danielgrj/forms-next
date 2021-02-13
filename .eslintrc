@@ -27,7 +27,9 @@
   },
   "env": {
     "jest/globals": true,
-    "browser": false
+    "browser": true,
+    "es6": true,
+    "node": true
   },
   "settings": {
     "import/resolver": {

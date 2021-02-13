@@ -1,4 +1,4 @@
-import { Pool } from 'pg';
+import { Pool } from 'pg'
 
 const pool = new Pool({
   user: process.env.RDS_USERNAME,
@@ -6,9 +6,9 @@ const pool = new Pool({
   database: process.env.RDS_DB_NAME,
   password: process.env.RDS_PASSWORD,
   port: process.env.RDS_PORT,
-});
+})
 
 pool.query('SELECT NOW()', (err, res) => {
-  console.log(err, res);
-  pool.end();
-});
+  console.log(err, res)
+  pool.end()
+})
