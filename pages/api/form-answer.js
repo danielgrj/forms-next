@@ -19,7 +19,7 @@ export default async (req, res) => {
           return
         }
 
-        if (!/[0-9]{5}/.test(zipCode)) {
+        if (!/^[0-9]{5}$/.test(zipCode)) {
           res.status(400).json({ error: 'The zip code is not valid' })
           return
         }
