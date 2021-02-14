@@ -39,7 +39,8 @@
         "map": [
           ["@db", "./db"],
           ["@models", "./models"],
-          ["@components", "./components"]
+          ["@components", "./components"],
+          ["@api", "./pages/api"]
         ],
         "extensions": [".js"]
       }
