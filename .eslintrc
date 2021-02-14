@@ -37,12 +37,9 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@src", "./src"],
-          ["@utils", "./src/utils"],
-          ["@models", "./src/models"],
-          ["@controllers", "./src/controllers"],
-          ["@middleware", "./src/middleware"],
-          ["@routes", "./src/routes"]
+          ["@db", "./db"],
+          ["@models", "./models"],
+          ["@components", "./components"]
         ],
         "extensions": [".js"]
       }

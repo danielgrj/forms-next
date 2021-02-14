@@ -8,6 +8,7 @@ const pool = new Pool({
   port: process.env.RDS_PORT,
 })
 
-export const query = (statement, params, callback) => pool(statement, params, callback)
+const query = (statement, params, callback) => pool.query(statement, params, callback)
 
+export { query }
 export default pool
