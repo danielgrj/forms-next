@@ -3,7 +3,7 @@ import { query } from '@db'
 const FormAnswer = {
   create: values => {
     const { firstNames, lastNames, zipCode, phoneNumber, email, initiative } = values
-    const statement = `INSERT INTO public.forms_answers (
+    const statement = `INSERT INTO public.form_answers (
       first_names, 
       last_names, 
       zip_code, 
