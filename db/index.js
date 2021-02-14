@@ -8,7 +8,7 @@ const pool = new Pool({
   port: process.env.RDS_PORT,
 })
 
-pool.query('SELECT NOW()', (err, res) => {
-  console.log(err, res)
-  pool.end()
-})
+const query = (statement, params, callback) => pool.query(statement, params, callback)
+
+export { query }
+export default pool

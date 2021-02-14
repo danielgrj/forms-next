@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@db": ["db"],
+      "@models/*": ["models/*"],
+      "@components/*": ["components/*"]
+    }
+  }
+}
